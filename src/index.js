@@ -21,7 +21,7 @@ app.post('/users', async (req, res) => {
         sendWelcomeEmail(user.email, user.name)
         res.status(201).send({
             'msg': 'Register successfully',
-            'verify': 'Check Email and verify email'
+            'verify': 'Check Gmail and verify your email'
         })
     } catch (e) {
         res.status(400).send(e)
